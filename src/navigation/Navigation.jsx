@@ -1,15 +1,15 @@
-import React from 'react'
-import { createStackNavigator } from '@react-navigation/stack'
-import HomeScreen from "../screens/HomeScreen"
-import SettingsScreen from '../screens/SettingsScreen'
+import React from 'react';
+import { createDrawerNavigator } from '@react-navigation/drawer';
+import HomeScreen from '../screens/HomeScreen';
+import SettingsScreen from '../screens/SettingsScreen';
 
-const Stack = createStackNavigator();
+const Drawer = createDrawerNavigator();
 
-export default function NavigationStack() {
-  return (
-<Stack.Navigator initialRouteName="Home" >
-<Stack.Screen name="Home" component={HomeScreen}/>
-<Stack.Screen name="SettingsScreen" component={SettingsScreen}/>
-</Stack.Navigator>
-  )
+export default function NavigationDrawer() {
+   return (
+      <Drawer.Navigator>
+         <Drawer.Screen name='Home' component={HomeScreen} />
+         <Drawer.Screen name='Settings' component={SettingsScreen} />
+      </Drawer.Navigator>
+   );
 }
