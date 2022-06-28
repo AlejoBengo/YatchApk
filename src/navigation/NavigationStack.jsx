@@ -5,16 +5,6 @@ import SettingsScreen from '../screens/SettingsScreen';
 
 const Drawer = createDrawerNavigator();
 
-<<<<<<< Updated upstream:src/navigation/Navigation.jsx
-export default function NavigationDrawer() {
-   return (
-      <Drawer.Navigator>
-         <Drawer.Screen name='Home' component={HomeScreen} />
-         <Drawer.Screen name='Settings' component={SettingsScreen} />
-      </Drawer.Navigator>
-   );
-}
-=======
 export default function NavigationStack() {
   return (
 <Stack.Navigator initialRouteName="Home" >
@@ -23,4 +13,3 @@ export default function NavigationStack() {
 </Stack.Navigator>
   )
 }
->>>>>>> Stashed changes:src/navigation/NavigationStack.jsx
